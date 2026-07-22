@@ -1,4 +1,4 @@
-import { useState } from 'react'
+/*import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from './assets/vite.svg'
 import heroImg from './assets/hero.png'
@@ -120,3 +120,23 @@ function App() {
 }
 
 export default App
+*/
+
+import Layout from "./components/layout/Layout/Layout";
+import Hero from "./components/sections/Hero/Hero";
+
+function App() {
+
+    return (
+
+        <Layout>
+
+            <Hero />
+
+        </Layout>
+
+    );
+
+}
+
+export default App;
