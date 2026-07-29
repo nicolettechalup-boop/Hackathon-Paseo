@@ -1,41 +1,38 @@
 import "./Navbar.css";
-
+import useScroll from "../../../hooks/useScroll";
+import logo from "../../../assets/logos/HACKATOON_5.png";
 function Navbar() {
+  const scrolled = useScroll();
+
   return (
-    <header className="navbar">
-      <div className="container navbar__container">
+    <header className={`navbar ${scrolled ? "navbar--scrolled" : ""}`}>
+      <div className="navbar__container">
 
-        <h2 className="logo">
-          Hackathon
-        </h2>
+       <div className="navbar__logo">
+          <img 
+            src={logo}
+            alt="Hackathon Paseo Aranjuez"
+          />
+        </div>
+        <nav className="navbar__menu">
 
-        <nav>
+          <a href="#inicio">Inicio</a>
 
-          <ul className="navbar__menu">
+          <a href="#about">Hackathon</a>
 
-            <li>
-              <a href="#inicio">Inicio</a>
-            </li>
+          <a href="#timeline">Agenda</a>
 
-            <li>
-              <a href="#hackathon">Hackathon</a>
-            </li>
+          <a href="#premios">Premios</a>
 
-            <li>
-              <a href="#premios">Premios</a>
-            </li>
+          <a href="#sponsors">Sponsors</a>
 
-            <li>
-              <a href="#cronograma">Cronograma</a>
-            </li>
-
-            <li>
-              <a href="#contacto">Contacto</a>
-            </li>
-
-          </ul>
+          <a href="#contact">Contacto</a>
 
         </nav>
+
+        <button className="navbar__button">
+          Inscribirme
+        </button>
 
       </div>
     </header>

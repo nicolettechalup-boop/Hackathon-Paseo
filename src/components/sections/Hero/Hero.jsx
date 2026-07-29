@@ -1,25 +1,32 @@
 import "./Hero.css";
+import HeroParticles from "./HeroParticles";
+import HeroContent from "./HeroContent";
+import heroVideo from "../../../assets/videos/hero.mp4";
 
 function Hero() {
+  return (
+    <section className="hero">
+      {/* Video de fondo */}
+      <video
+        className="hero__video"
+        autoPlay
+        muted
+        loop
+        playsInline
+      >
+        <source src={heroVideo} type="video/mp4" />
+      </video>
 
-    return (
+      {/* Partículas */}
+      <HeroParticles />
 
-        <section className="hero">
+      {/* Overlay oscuro */}
+      <div className="hero__overlay"></div>
 
-            <div className="container">
-
-                <h1>
-
-                    Hackathon Paseo Aranjuez
-
-                </h1>
-
-            </div>
-
-        </section>
-
-    );
-
+      {/* Contenido */}
+      <HeroContent />
+    </section>
+  );
 }
 
 export default Hero;
