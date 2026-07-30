@@ -2,6 +2,7 @@ import "./Navbar.css";
 import useScroll from "../../../hooks/useScroll";
 import logo from "../../../assets/logos/HACKATOON_5.png";
 function Navbar() {
+  
   const scrolled = useScroll();
 
   return (
