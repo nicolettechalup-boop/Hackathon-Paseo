@@ -85,7 +85,7 @@ function HeroContent() {
 
         <div>
 
-          <h3>500+</h3>
+          <h3>250+</h3>
 
           <span>Participantes</span>
 
@@ -93,7 +93,7 @@ function HeroContent() {
 
         <div>
 
-          <h3>20+</h3>
+          <h3>7+</h3>
 
           <span>Mentores</span>
 
@@ -101,7 +101,7 @@ function HeroContent() {
 
         <div>
 
-          <h3>50.000 Bs</h3>
+          <h3>10+</h3>
 
           <span>Premios</span>
 
